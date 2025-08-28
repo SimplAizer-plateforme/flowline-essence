@@ -2,7 +2,7 @@ const TestimonialSection = () => {
   const profiles = [
     {
       name: "Nathan Goutagny",
-      role: "Co-fondateur & Expert IA",
+      role: "Co-fondateur & développeur IA",
       image: "https://media.licdn.com/dms/image/v2/D4E03AQFMebeDQV1orA/profile-displayphoto-crop_800_800/B4EZhaCq4xGcAI-/0/1753857307773?e=1756944000&v=beta&t=iJpk8oQnTj2UpVATB8pcC5M12jOtFTrnJjPLx5aJjGk",
       linkedin: "https://www.linkedin.com/in/nathan-goutagny-325080283?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BB7I0IuTRShGkN7Ge5YRxGA%3D%3D",
     },
