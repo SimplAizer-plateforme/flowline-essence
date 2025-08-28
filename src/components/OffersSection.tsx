@@ -6,7 +6,7 @@ const OffersSection = () => {
       id: 1,
       title: "Plateforme de gestion de réservations",
       highlight: "réservations",
-      description: "Avec SimplAizer, centralisez toutes vos réservations et visualisez-les en temps réel. Comparez vos performances jour après jour, semaine après semaine, et offrez à vos clients un accueil toujours plus fluide et professionnel.",
+      description: "Avec SimpleBook, centralisez toutes vos réservations et visualisez-les en temps réel. Comparez vos performances jour après jour, semaine après semaine, et offrez à vos clients un accueil toujours plus fluide et professionnel.",
       benefits: [
         "Réduction de no-show",
         "Moins d’appels, moins d’erreurs",
@@ -23,7 +23,7 @@ const OffersSection = () => {
       id: 2,
       title: "Plateforme de gestion des stocks",
       highlight: "stocks",
-      description: "SimplAizer suit automatiquement vos entrées et sorties, vous alerte quand un produit manque et fournit des statistiques claires. Comparez vos consommations d’un mois à l’autre et planifiez vos commandes intelligemment.",
+      description: "SimpleStock suit automatiquement vos entrées et sorties, vous alerte quand un produit manque et fournit des statistiques claires. Comparez vos consommations d’un mois à l’autre et planifiez vos commandes intelligemment.",
       benefits: [
         "Alertes automatiques par seuil",
         "Formulaire simple d’entrée et de sortie",
