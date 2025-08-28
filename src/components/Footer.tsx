@@ -31,13 +31,16 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3 text-sm">Produits</h4>
             <ul className="space-y-1 text-gray-400 text-xs">
-              {["Fonctionnalités", "Tarifs"].map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase()}`} className="hover:text-white transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="#features" className="hover:text-white transition-colors">
+                  Fonctionnalités
+                </a>
+              </li>
+              <li>
+                <a href="#pricing" className="hover:text-white transition-colors">
+                  Tarifs
+                </a>
+              </li>
             </ul>
           </div>
           
@@ -59,13 +62,21 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3 text-sm">Support</h4>
             <ul className="space-y-1 text-gray-400 text-xs">
-              {["Contact", "Confidentialité", "Conditions"].map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase()}`} className="hover:text-white transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="#contact" className="hover:text-white transition-colors">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#confidentialite" className="hover:text-white transition-colors">
+                  Confidentialité
+                </a>
+              </li>
+              <li>
+                <a href="#conditions" className="hover:text-white transition-colors">
+                  Conditions
+                </a>
+              </li>
             </ul>
           </div>
         </div>
