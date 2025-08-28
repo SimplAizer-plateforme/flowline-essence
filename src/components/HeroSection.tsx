@@ -8,8 +8,7 @@ const HeroSection = () => {
         <div className="text-center animate-fade-in">
           {/* Hero Badge */}
           <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-8">
-            <Sparkles size={16} className="text-primary" />
-            <span className="text-sm font-medium text-primary">New: AI-Powered Automation</span>
+            <span className="text-sm font-medium text-primary">Déléguez l’opérationnel tout en gardant le contrôle</span>
           </div>
           
           {/* Main Title */}
@@ -33,12 +32,30 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 group"
-              asChild
+              onClick={() => {
+                const contactEl = document.querySelector('#contact');
+                if (contactEl) {
+                  (contactEl as HTMLElement).scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.hash = '#contact';
+                }
+              }}
             >
-              <a href="#contact">
-                Commencez maintenant
-                <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              <span
+                className="underline decoration-transparent hover:decoration-white/70"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  window.open(
+                    'https://calendly.com/ton-lien-calendly',
+                    'Calendly',
+                    'width=800,height=700,scrollbars=yes,resizable=yes'
+                  );
+                }}
+              >
+                Commencez
+              </span>
+              &nbsp;maintenant
+              <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               variant="outline" 
@@ -73,10 +90,10 @@ const HeroSection = () => {
           {/* Client Logos */}
           <div className="mt-20">
             <p className="text-sm text-text-secondary mb-8 font-medium">
-              On utilise les meilleurs outils pour vous offrir la meilleure expérience.
+              Compatible avec les outils que vous utilisez déjà au quotidien.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-12 opacity-60 hover:opacity-80 transition-opacity">
-              {["Make", "Supabase", "Notion", "Google", "Microsoft", "Figma"].map((logo) => (
+              {["Make", "Word", "Excel", "Pdf", "Google", "Gmail", "Google Drive"].map((logo) => (
                 <div key={logo} className="text-lg font-semibold text-text-secondary hover:text-primary transition-colors cursor-pointer">
                   {logo}
                 </div>

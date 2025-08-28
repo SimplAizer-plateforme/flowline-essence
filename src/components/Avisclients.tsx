@@ -11,7 +11,7 @@ const TestimonialSection = () => {
             Ce que les clients <span className="text-gradient">disent</span> de nous.
           </h2>
           <p className="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-            SimplAizer, ce n’est pas juste un logiciel : c’est un accompagnement sur mesure pour les restaurateurs et les franchises.
+            SimplAizer, c’est plus qu’un simple outil, c’est un copilote intelligent conçu pour simplifier, automatiser et optimiser les opérations de gestion des restaurateurs et artisans.
           </p>
         </div>
 

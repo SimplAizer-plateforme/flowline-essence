@@ -6,51 +6,50 @@ const PricingSection = () => {
 
   const plans = [
     {
-      name: "Starter",
-      description: "Perfect for small businesses starting with AI automation.",
-      monthlyPrice: 37,
-      annualPrice: 370,
+      name: "SimpleStock Starter",
+      description: "Pensé pour les établissements indépendants ou les petites et moyennes équipes.",
+      monthlyPrice: 79,
+      annualPrice: 869,
       featured: false,
-      buttonText: "Choose this plan",
+      buttonText: "Choisir cet abonnement",
       ctaLink: "https://calendly.com/ton-calendly/starter",  // ✅ lien CTA Starter
       features: [
-        "Basic workflow automation",
-        "AI-powered personal assistant", 
-        "Standard analytics & reporting",
-        "Email & chat support",
-        "Up to 3 AI integrations"
+        "Toutes les fonctionnalités SimpleStock",
+        "Jusqu’à 300 références produits", 
+        "Jusqu’à 1 000 mouvements / mois",
+        "3 utilisateurs inclus",
+        "Support par e-mail et téléphone 5j/7j"
       ]
     },
     {
-      name: "Professional",
-      description: "Perfect for small businesses starting with AI automation.",
-      monthlyPrice: 75,
-      annualPrice: 750,
+      name: "SimpleStock",
+      description: "Pensé pour les franchises, groupes ou les entreprises avec multi-sites",
+      monthlyPrice: "Sur devis",
+      annualPrice: "Sur devis",
       featured: true,
       buttonText: "Choose this plan",
       ctaLink: "https://calendly.com/ton-calendly/professional",  // ✅ lien CTA Professional
       features: [
-        "Advanced workflow automation",
-        "AI-driven sales & marketing tools",
-        "Enhanced data analytics & insights", 
-        "Priority customer support",
-        "Up to 10 AI integrations"
+        "Références & mouvements illimités",
+        "Utilisateurs illimités",
+        "Intégration API (ERP, caisse, fournisseurs, etc.)", 
+        "Connexion multi-sites et permissions personnalisées",
+        "Accompagnement dédié + support email et téléphone 6j/7j"
       ]
     },
     {
-      name: "Enterprise",
-      description: "Perfect for small businesses starting with AI automation.",
-      monthlyPrice: "Custom",
-      annualPrice: "Custom", 
+      name: "SimpleBook Enterprise",
+      description: "Pour ceux qui veulent optimiser leur gestion de réservations et leur taux de remplissage.",
+      monthlyPrice: "Sur devis",
+      annualPrice: "Sur devis", 
       featured: false,
-      buttonText: "Schedule a call",
+      buttonText: "Discutons ensemble",
       ctaLink: "https://calendly.com/ton-calendly/enterprise",  // ✅ lien CTA Enterprise
       features: [
-        "Fully customizable AI automation",
-        "Dedicated AI business consultant",
-        "Enterprise-grade compliance",
-        "24/7 VIP support",
-        "Unlimited AI integrations"
+        "Toutes les fonctionnalitées de SimpleBook",
+        "Intégration avec vos outils numérique actuels",
+        "Support email et téléphone 6j/7j",
+        "formation à l’outil incluse avec vos données personnalisé",
       ]
     }
   ];
@@ -70,11 +69,11 @@ const PricingSection = () => {
         {/* ✅ Title */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-[#161b22] mb-6 tracking-tight">
-            The Best <span style={{ color: '#124CFA' }}>AI Automation</span>,<br />
-            at the Right Price
+            Les meilleurs <span style={{ color: '#124CFA' }}>plateformes</span>,<br />
+            de gestion pour les artisants
           </h2>
           <p className="text-xl text-black max-w-2xl mx-auto mb-9 leading-relaxed">
-            Choose a plan that fits your business needs and start automating with AI
+          Choisissez l’abonnement qui correspond à vos besoins, vous pilotez, nos plateformes exécutent.
           </p>
         </div>
 
@@ -84,7 +83,7 @@ const PricingSection = () => {
             className={`${!isAnnual ? 'font-bold text-primary' : 'text-black font-normal'} cursor-pointer`}
             onClick={() => setIsAnnual(false)}
           >
-            Monthly
+            Mensuel
           </span>
           <label className="relative inline-block w-12 h-7 cursor-pointer">
             <input 
@@ -105,7 +104,7 @@ const PricingSection = () => {
             className={`${isAnnual ? 'font-bold text-primary' : 'text-black font-normal'} cursor-pointer`}
             onClick={() => setIsAnnual(true)}
           >
-            Annually
+            Annuel
           </span>
         </div>
 
@@ -124,7 +123,7 @@ const PricingSection = () => {
                 {plan.name}
                 {plan.featured && (
                   <span className="bg-white text-[#124CFA] px-2 py-1 text-xs rounded-full ml-2">
-                    Popular
+                    Entreprise
                   </span>
                 )}
               </h3>
@@ -136,7 +135,7 @@ const PricingSection = () => {
                   : plan.monthlyPrice
                 }
                 <span className={`text-base font-normal ml-1 ${plan.featured ? 'text-white/90' : 'text-black'}`}>
-                  /{isAnnual ? 'year' : 'month'}
+                  /{isAnnual ? 'an' : 'mois'}
                 </span>
               </p>
               
