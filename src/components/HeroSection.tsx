@@ -33,12 +33,11 @@ const HeroSection = () => {
               size="lg" 
               className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 group"
               onClick={() => {
-                const contactEl = document.querySelector('#contact');
-                if (contactEl) {
-                  (contactEl as HTMLElement).scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  window.location.hash = '#contact';
-                }
+                window.open(
+                  'https://cal.com/simplaizer-agency',
+                  'Rendez-vous',
+                  'width=900,height=750,scrollbars=yes,resizable=yes'
+                );
               }}
             >
               <span
@@ -46,9 +45,9 @@ const HeroSection = () => {
                 onClick={(e) => {
                   e.stopPropagation();
                   window.open(
-                    'https://calendly.com/ton-lien-calendly',
-                    'Calendly',
-                    'width=800,height=700,scrollbars=yes,resizable=yes'
+                    'https://cal.com/simplaizer-agency',
+                    'Rendez-vous',
+                    'width=900,height=750,scrollbars=yes,resizable=yes'
                   );
                 }}
               >

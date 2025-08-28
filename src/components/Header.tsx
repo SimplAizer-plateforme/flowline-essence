@@ -29,7 +29,16 @@ const Header = () => {
           
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <Button className="bg-primary hover:bg-primary-hover text-primary-foreground px-6 py-2 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200">
+            <Button
+              className="bg-primary hover:bg-primary-hover text-primary-foreground px-6 py-2 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+              onClick={() => {
+                window.open(
+                  'https://cal.com/simplaizer-agency',
+                  'Rendez-vous',
+                  'width=900,height=750,scrollbars=yes,resizable=yes'
+                );
+              }}
+            >
               Commencez
             </Button>
           </div>
@@ -56,8 +65,17 @@ const Header = () => {
               <a href="#contact" className="text-text-secondary hover:text-primary transition-colors font-medium">
                 Contact
               </a>
-              <Button asChild className="bg-primary hover:bg-primary-hover text-primary-foreground px-6 py-2 rounded-lg font-semibold mt-4">
-                <a href="#contact">Commencez</a>
+              <Button
+                className="bg-primary hover:bg-primary-hover text-primary-foreground px-6 py-2 rounded-lg font-semibold mt-4"
+                onClick={() => {
+                  window.open(
+                    'https://cal.com/simplaizer-agency',
+                    'Rendez-vous',
+                    'width=900,height=750,scrollbars=yes,resizable=yes'
+                  );
+                }}
+              >
+                Commencez
               </Button>
             </nav>
           </div>

@@ -22,6 +22,13 @@ const SaveHoursSection = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            onClick={() => {
+              window.open(
+                'https://cal.com/simplaizer-agency',
+                'Rendez-vous',
+                'width=900,height=750,scrollbars=yes,resizable=yes'
+              );
+            }}
           >
             Contactez-nous
           </Button>

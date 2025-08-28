@@ -7,12 +7,12 @@ const CTASection = () => {
     "Audit gratuit",
   ];
 
-  // Fonction pour ouvrir Calendly en pop-up
-  const openCalendly = () => {
+  // Fonction pour ouvrir la prise de RDV
+  const openMeeting = () => {
     window.open(
-      "https://calendly.com/ton-lien-calendly", // 🔗 Mets ton lien Calendly ici
-      "Calendly",
-      "width=800,height=700,scrollbars=yes,resizable=yes"
+      "https://cal.com/simplaizer-agency",
+      "Rendez-vous",
+      "width=900,height=750,scrollbars=yes,resizable=yes"
     );
   };
 
@@ -55,7 +55,7 @@ const CTASection = () => {
             {/* Bouton Calendly */}
             <Button 
               size="lg" 
-              onClick={openCalendly}
+              onClick={openMeeting}
               className="bg-primary hover:bg-primary-hover text-primary-foreground px-10 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 group"
             >
               Lancez-vous maintenant
